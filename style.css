@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+#dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#dark-mode-toggle:hover {
+    background: #555;
+}
+
+/* Sections */
+#home, #about, #contact {
+    padding: 20px;
+}
+
+/* About Section */
+#about {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Contact Section */
+#contact {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header, 
+body.dark-mode footer {
+    background-color: #333;
+}
+
+body.dark-mode .post {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark-mode #contact {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .post {
+        padding: 10px;
+    }
+
+    #contact {
+        padding: 10px;
+    }
+
+    form input, form textarea, form button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    form button {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+}
